@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Lottie</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    </link>
+</head>
+
+<body style="background-color: #0B1C2B;">
+    <div id="ContentLottie" class="Content-Middle">
+    </div>
+</body>
+<script src="js/functions.js"></script>
+<script src="js/Animation.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    var Componente = new LottieClass({
+        Divid: 'newDivId',
+        Divclass: 'newDivClass',
+        lottieId: 'newLottieId',
+        lottieClass: 'newLottieClass',
+        HostDiv: '#ContentLottie',
+        lottieSrc: 'json/librototal.json',
+    });
+    Componente.generarLottie();
+</script>
+
+</html>
